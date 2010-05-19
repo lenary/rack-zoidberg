@@ -33,7 +33,7 @@
     
     ActionController::Dispatcher.middleware.use(Rack::Zoidberg, 
                                                 args) do 
-      # fun stuff goes here!  
+      # zoidberg goes here!  
       # Rack::Rewrite                                       
     end
 
@@ -44,7 +44,7 @@
     @@@ ruby
     
     use(Rack::Zoidberg, args) do
-      # fun stuff goes here!
+      # zoidberg goes here!
     end
     
 # `config.ru`
@@ -52,7 +52,7 @@
     @@@ ruby
     
     use(Rack::Zoidberg, args) do
-      # fun stuff goes here!
+      # zoidberg goes here!
     end
     
     run Rack::Lobster
