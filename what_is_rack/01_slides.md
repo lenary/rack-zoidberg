@@ -1,4 +1,4 @@
-!SLIDE bullets
+!SLIDE bullets incremental
 
 # What is Rack?
 
@@ -36,22 +36,6 @@
       
       def call(env)
         @app.call(env)
-      end
-    end
-
-!SLIDE code small
-
-    @@@ ruby
-    class Rack::Simple::Middleware
-      def initialize(app)
-        @app = app
-      end
-
-      def call(env)
-      
-        status, headers, content = @app.call(env)
-      
-        return [status, headers, content]
       end
     end
 

@@ -1,4 +1,4 @@
-!SLIDE bullets
+!SLIDE bullets incremental
 
 # Using Rack
 
@@ -56,10 +56,6 @@
     end
     
     run Rack::Lobster
-    
-# Rails
-
-    $ rake middleware
 
 !SLIDE bullets incremental
 
@@ -77,7 +73,7 @@
 * or `lib` (everyone else)
 * Middlewares go in `lib`
 
-!SLIDE small
+!SLIDE smaller
 
 # [Directory Conventions for Rack Middleware RubyGems](http://blog.smartlogicsolutions.com/2010/05/13/directory-conventions-for-rack-middleware-rubygems/)
 
@@ -87,7 +83,7 @@
     |   |   |-- ...
     |   |   `-- ...
     |   `-- zoidberg.rb
-    `-- rack-zoidberg.rb
+    `-- rack-zoidberg.rb # this one should just require 'rack/zoidberg'
     
 ## allows:
 
@@ -100,3 +96,10 @@
     use Rack::Zoidberg, args
 
 # rack-contrib
+
+!SLIDE bullets incremental
+
+# Convenience Methods
+
+* `@request = Rack::Request.new(env)`
+* `@response = Rack::Response.new(body, status, headers)`
