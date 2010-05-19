@@ -1,0 +1,27 @@
+
+{
+     "name": "Rack",
+     "description": "Lobsters all the way down",
+     "sections": 
+    [
+         
+        {
+            "section":"intro"
+        },
+        {
+            "section":"what_is_rack"
+        },
+        {
+            "section":"using_rack"
+        },
+        {
+            "section":"underneath"
+        },
+        {
+            "section":"thanks"
+        }
+         
+    ]
+}
+
+
