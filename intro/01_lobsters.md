@@ -3,7 +3,7 @@
 Rack
 ====
 
-its Lobsters all the way down
+it's Lobsters all the way down
 ---------------------
 
 !SLIDE code
